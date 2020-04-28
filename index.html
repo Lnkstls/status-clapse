@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>服务器状态</title>
+
+
+    <!-- Fix chrome language detection -->
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <!-- Styles -->
+    <link href="css/core.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/hotaru_fix.css" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'icons';
+            src: url('fonts/icons/icons.eot');
+            src: url('fonts/icons/icons.eot') format('embedded-opentype'), url('fonts/icons/icons.ttf') format('truetype'), url('fonts/icons/icons.woff') format('woff'), url('fonts/icons/icons.svg') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        th {
+            text-align: center;
+        }
+    </style>
+
+
+    <!--[if lt IE 9]>
+    <script src="/js/selectivizr-min.js"></script>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="loading-notice">
+            <div class="progress progress-striped active">
+                <div class="progress-bar progress-bar-warning" style="width: 100%;">加载中...</div>
+            </div>
+
+        </div>
+
+        <table class="table table-striped" style="">
+            <thead>
+                <tr>
+                    <th id="status4">运行状态</th>
+                    <th id="name">节点名</th>
+                    <th id="type">类型</th>
+                    <th id="location">服务器位置</th>
+                    <th id="uptime">在线时间</th>
+                    <th id="load">负载</th>
+                    <th id="network">网络(B/s) ↓|↑</th>
+                    <th id="traffic">流量(B) ↓|↑</th>
+                    <th id="cpu">CPU</th>
+                    <th id="ram">RAM</th>
+                    <th id="hdd">ROM</th>
+                </tr>
+            </thead>
+            <tbody id="servers" style="text-align:center;">
+                <!-- Servers here \o/ -->
+            </tbody>
+        </table>
+
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/serverstatus.js"></script>
+        <script src="js/serverstatus.min.js"></script>
+</body>
+
+<footer style="text-align:center;">
+    <p>Powered by <a href="javascript:void(0);">APTX探针</a></p>
+</footer>
+
+</html>

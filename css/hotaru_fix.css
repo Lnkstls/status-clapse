@@ -35,7 +35,7 @@
 	#location		{ display:none; visibility:hidden; }
 	#uptime			{ display:none; visibility:hidden; }
 	#traffic		{ display:none; visibility:hidden; }
-	#load, tr td:nth-child(6)			{ display:none; visibility:hidden; }
+	#load, tr td:nth-child(8)			{ display:none; visibility:hidden; }
 	.background {
 		background: url(../img/tenshi.jpg) no-repeat;
 		background-size: 100%; 
